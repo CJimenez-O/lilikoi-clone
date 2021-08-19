@@ -212,6 +212,7 @@ input[type="range"] {
 
 	.element {
 		gap: 0;
+		width: unset;
 	}
 }
 
