@@ -59,7 +59,7 @@
 .hero-video {
 	position: relative;
 	overflow: hidden;
-	min-height: 600px;
+	height: 600px;
 	text-align: center;
 }
 
@@ -85,7 +85,7 @@
 }
 
 .video {
-	min-height: 500px;
+	min-height: 600px;
 	position: absolute;
 	object-fit: cover;
 	object-position: center center;
@@ -168,6 +168,10 @@ input[type="range"] {
 	font-size: 14px;
 }
 
+.element-name {
+	width: 80px;
+}
+
 .element-name i {
 	margin-right: 5px;
 }
@@ -175,6 +179,10 @@ input[type="range"] {
 .element-percent {
 	display: flex;
 	gap: 10px;
+}
+
+.percentage {
+	width: 80px;
 }
 
 .icon {
