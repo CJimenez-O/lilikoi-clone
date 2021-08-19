@@ -132,6 +132,9 @@ p {
 }
 
 @media (max-width: 650px) {
+	.core-details {
+		width: 100%;
+	}
 	.value-container {
 		display: block;
 		padding: 30px 10px;
