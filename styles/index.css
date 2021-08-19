@@ -148,6 +148,7 @@
 
 input[type="range"] {
 	-webkit-appearance: none;
+	width: 100px !important;
 	appearance: none;
 }
 
@@ -197,12 +198,21 @@ input[type="range"] {
 		display: block;
 	}
 
+	.pieChart {
+		height: 250px;
+		width: 250px;
+	}
+
 	.chart-title {
 		width: unset;
 	}
 
 	.chart-details {
 		width: unset;
+	}
+
+	.element {
+		gap: 0;
 	}
 }
 
