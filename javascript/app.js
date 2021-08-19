@@ -50,3 +50,12 @@ const config = {
 };
 
 var myChart = new Chart(document.getElementById("myChart"), config);
+
+const navBtn = document.querySelector(".bars");
+const sideBar = document.querySelector(".side-bar");
+const body = document.querySelector("body");
+
+navBtn.addEventListener("click", (e) => {
+	sideBar.classList.toggle("hidden");
+	body.classList.toggle("freeze");
+});

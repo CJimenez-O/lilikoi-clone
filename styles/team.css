@@ -4,6 +4,11 @@
 	font-family: "Open Sans";
 }
 
+.freeze {
+	position: fixed;
+	overflow: hidden;
+}
+
 .navBar {
 	padding: 0px 35px;
 }
@@ -25,6 +30,36 @@
 	font-size: 25px;
 	cursor: pointer;
 	margin-top: 20px;
+}
+
+.side-bar {
+	background-color: #fff;
+	position: absolute;
+	height: 100vh;
+	right: 0;
+	width: 345px;
+	justify-content: center;
+	display: grid;
+	position: fixed;
+}
+
+.link {
+	text-decoration: none;
+	color: #000;
+}
+
+.side-bar-links {
+	list-style: none;
+	margin-top: 80px;
+}
+
+.side-bar-link {
+	font-size: 30px;
+	padding: 15px 0;
+}
+
+.hidden {
+	display: none;
 }
 
 /* hero */
@@ -119,6 +154,24 @@
 	margin-bottom: -20px;
 }
 
+@media (max-width: 750px) {
+	.current-team-members {
+		display: block;
+	}
+
+	.position {
+		max-width: 150px;
+		min-width: 100px;
+	}
+
+	.quote-container {
+		text-align: center;
+	}
+	.quote {
+		margin: auto;
+	}
+}
+
 /* footer */
 footer {
 	display: grid;
@@ -152,4 +205,24 @@ footer {
 
 .legal {
 	text-align: center;
+}
+
+@media (max-width: 750px) {
+	footer {
+		padding: 20px 50px;
+		justify-content: unset;
+	}
+	.footer-links {
+		display: block;
+	}
+	.social-links {
+		display: block;
+	}
+	.flex-links {
+		margin-bottom: 40px;
+	}
+
+	.legal {
+		text-align: unset;
+	}
 }

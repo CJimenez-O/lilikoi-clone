@@ -8,11 +8,6 @@ p {
 	padding-bottom: 0;
 }
 
-.freeze {
-	position: fixed;
-	overflow: hidden;
-}
-
 .navBar {
 	padding: 0px 35px;
 }
@@ -36,7 +31,9 @@ p {
 	margin-top: 20px;
 }
 
-/* sidebar */
+.freeze {
+	overflow: hidden;
+}
 
 .side-bar {
 	background-color: #fff;
@@ -47,6 +44,7 @@ p {
 	justify-content: center;
 	display: grid;
 	position: fixed;
+	z-index: 999;
 }
 
 .link {
@@ -68,84 +66,108 @@ p {
 	display: none;
 }
 
-/* values section */
-.values {
-	padding: 50px 40px;
+/* youttube iframe */
+.video {
+	width: 100%;
+	margin: auto;
+	z-index: 1;
 }
 
-.value-container-title {
-	border-bottom: 3px solid #9c90c5;
-	width: 300px;
+/* form section */
+.form-container {
+	display: grid;
+	justify-content: center;
+	margin: 100px 30%;
+	max-width: 600px;
 }
 
-.core-details {
-	width: 60%;
-	margin: 80px auto;
+.form-details {
+	padding: 30px 0;
 }
 
-.values-content {
+.form {
+	display: grid;
+}
+.flex {
 	display: flex;
-	gap: 150px;
-	margin: 50px 100px;
+	gap: 50px;
 }
 
-.value-container {
-	box-shadow: 0px 0px 10px gray;
-	border-radius: 10px;
-	display: flex;
-	gap: 20px;
-	padding: 30px 30px;
+.grid {
+	display: grid;
 }
 
-.value-image {
-	max-height: 200px;
-	margin-left: -100px;
-	border-radius: 10px;
+label {
+	margin-left: 10px;
+	margin-bottom: 5px;
 }
 
-.value {
-	height: 200px;
-}
-
-.value-title {
-	font-size: 25px;
-}
-.details {
-	padding-top: 15px;
+.phone {
 	max-width: 300px;
-	font-size: 14px;
-	height: 150px;
-	overflow: auto;
+	min-width: 250px;
 }
 
-@media (max-width: 1150px) {
-	.values-content {
+.form-input {
+	margin-bottom: 10px;
+	border-radius: 15px;
+	border: none;
+	box-shadow: 0px 0px 10px gray;
+	padding: 10px 10px;
+}
+
+.message {
+	margin-bottom: 10px;
+	padding: 10px 10px;
+	height: 50px;
+	border-radius: 15px;
+	border: none;
+	box-shadow: 0px 0px 10px gray;
+}
+.form-input-refer {
+	border-radius: 15px;
+	border: none;
+	box-shadow: 0px 0px 10px gray;
+	padding: 10px 10px;
+}
+
+.captcha {
+	margin-top: 5px;
+	margin-left: 10px;
+	font-size: 12px;
+}
+
+.button-container {
+}
+
+.form-btn {
+	float: right;
+	margin: 20px 0;
+	border: none;
+	border-radius: 15px;
+	background-color: #9c90c5;
+	cursor: pointer;
+	color: black;
+	font-weight: 600;
+	padding: 10px 20px;
+}
+
+.form-btn:hover {
+	color: white;
+	background-color: black;
+}
+
+@media (max-width: 750px) {
+	.flex {
 		display: block;
 	}
 
-	.value-container {
-		margin-bottom: 50px;
+	.form-container {
+		margin: 100px 5%;
 	}
-	.details {
+
+	.phone {
+		min-width: unset;
 		max-width: unset;
-	}
-}
-
-@media (max-width: 650px) {
-	.value-container {
-		display: block;
-		padding: 30px 10px;
-	}
-	.values-content {
-		margin: 50px 50px;
-	}
-
-	.value-image {
-		margin-left: unset;
-		height: 150px;
-		display: block;
-		width: 95%;
-		margin: auto;
 	}
 }
 

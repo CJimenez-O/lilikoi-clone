@@ -12,7 +12,49 @@
 .bars {
 	font-size: 25px;
 	cursor: pointer;
+	position: relative;
+	z-index: 3;
 }
+
+/* sidebar */
+
+.freeze {
+	overflow: hidden;
+}
+
+.side-bar {
+	background-color: #fff;
+	position: absolute;
+	height: 100vh;
+	top: 0;
+	right: 0;
+	width: 345px;
+	justify-content: center;
+	display: grid;
+	position: fixed;
+	z-index: 2;
+}
+
+.link {
+	text-decoration: none;
+	color: #000;
+}
+
+.side-bar-links {
+	list-style: none;
+	margin-top: 80px;
+}
+
+.side-bar-link {
+	font-size: 30px;
+	padding: 15px 0;
+}
+
+.hidden {
+	display: none;
+}
+
+/* hero */
 
 .hero-video {
 	position: relative;
@@ -32,6 +74,7 @@
 	margin-top: 5%;
 	margin-bottom: 2%;
 	position: relative;
+	z-index: 1;
 }
 
 .hero-sub {
@@ -51,6 +94,16 @@
 	top: 0px;
 	left: 0px;
 	opacity: 0.5;
+}
+
+@media (max-width: 750px) {
+	.hero-title {
+		margin-top: 150px;
+	}
+
+	.hero-sub {
+		margin: 0 10px;
+	}
 }
 
 /* chart market strategy section */
@@ -129,6 +182,20 @@ input[type="range"] {
 	padding-left: 10px;
 	padding-right: 5px;
 	border-left: 1px solid black;
+}
+
+@media (max-width: 750px) {
+	.chart {
+		display: block;
+	}
+
+	.chart-title {
+		width: unset;
+	}
+
+	.chart-details {
+		width: unset;
+	}
 }
 
 /* wave section */
@@ -322,6 +389,20 @@ input[type="range"] {
 		url("https://lilikoiagency.com/wp-content/uploads/2020/08/admin-600x320.jpg");
 }
 
+@media (max-width: 750px) {
+	.company-list {
+		display: grid;
+	}
+
+	.our-team {
+		display: grid;
+		grid-template-columns: unset;
+		justify-content: center;
+	}
+}
+
+/* footer */
+
 footer {
 	display: grid;
 	justify-content: center;
@@ -354,4 +435,24 @@ footer {
 
 .legal {
 	text-align: center;
+}
+
+@media (max-width: 750px) {
+	footer {
+		padding: 20px 50px;
+		justify-content: unset;
+	}
+	.footer-links {
+		display: block;
+	}
+	.social-links {
+		display: block;
+	}
+	.flex-links {
+		margin-bottom: 40px;
+	}
+
+	.legal {
+		text-align: unset;
+	}
 }
