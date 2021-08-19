@@ -1,0 +1,357 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans";
+}
+
+.navBar {
+	float: right;
+	margin-top: 25px;
+	margin-right: 45px;
+}
+.bars {
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.hero-video {
+	position: relative;
+	overflow: hidden;
+	min-height: 600px;
+	text-align: center;
+}
+
+.hero-title {
+	background-image: url("https://lilikoiagency.com/wp-content/themes/lilikoi/assets/images/logo.svg");
+	background-size: cover;
+	color: #2c1f36;
+	font-size: 1em;
+	padding-top: 24.36788vw;
+	width: 55%;
+	margin: auto;
+	margin-top: 5%;
+	margin-bottom: 2%;
+	position: relative;
+}
+
+.hero-sub {
+	font-size: 30px;
+	/* add margin-top: 25% on mobile */
+	margin-bottom: 80px;
+	color: #2c1f36;
+}
+
+.video {
+	min-height: 500px;
+	position: absolute;
+	object-fit: cover;
+	object-position: center center;
+	z-index: -1;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	opacity: 0.5;
+}
+
+/* chart market strategy section */
+
+.chart {
+	display: flex;
+	padding: 40px 5%;
+	justify-content: center;
+	background-color: #f5f4f4;
+}
+
+.chart-title {
+	width: 60%;
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+.chart-details {
+	margin-bottom: 20px;
+	font-weight: 400;
+	width: 85%;
+}
+
+.chart-left {
+	max-width: 400px;
+	justify-content: center;
+}
+
+.pieChart {
+	height: 350px;
+	width: 350px;
+}
+
+.slider {
+	width: 1%;
+	position: relative;
+	top: 5px;
+}
+
+/* .slider[type="range"] {
+	width: 100px !important;
+} */
+
+input[type="range"] {
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+.slider[type="range"]::-webkit-slider-runnable-track {
+	-webkit-appearance: none;
+}
+
+.element {
+	display: flex;
+	gap: 70px;
+	padding: 5px 10px;
+	box-shadow: 0px 0px 5px gray;
+	border-radius: 15px;
+	margin: 20px 0;
+	background-color: #eaeaea;
+	height: 20px;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.element-name i {
+	margin-right: 5px;
+}
+
+.element-percent {
+	display: flex;
+	gap: 10px;
+}
+
+.icon {
+	margin-left: 5px;
+	padding-left: 10px;
+	padding-right: 5px;
+	border-left: 1px solid black;
+}
+
+/* wave section */
+.wave-section {
+	position: relative;
+	width: 100%;
+	height: 150px;
+	background: #f5f4f4;
+	overflow: hidden;
+}
+
+.wave {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background: url("../images/wave.png");
+	background-size: 1000px 100px;
+}
+
+.wave1 {
+	animation: animate 12s linear infinite;
+	z-index: 1000;
+	opacity: 0.7;
+	animation-delay: 0s;
+	bottom: 0;
+}
+
+@keyframes animate {
+	0% {
+		background-position-x: 0;
+	}
+	100% {
+		background-position-x: 1000px;
+	}
+}
+
+.wave2 {
+	animation: animate2 7s linear infinite;
+	z-index: 999;
+	opacity: 0.5;
+	animation-delay: -5s;
+	bottom: 0px;
+}
+
+@keyframes animate2 {
+	0% {
+		background-position-x: 0;
+	}
+	100% {
+		background-position-x: -1000px;
+	}
+}
+
+.wave3 {
+	animation: animate 9s linear infinite;
+	z-index: 998;
+	opacity: 0.2;
+	animation-delay: -2s;
+	bottom: 0px;
+}
+
+.wave4 {
+	animation: animate2 13s linear infinite;
+	z-index: 997;
+	opacity: 1;
+	animation-delay: -7s;
+	bottom: 0px;
+}
+
+.difference-section {
+	background: linear-gradient(#9c90c5, #e2def1, #fff);
+}
+
+.differences {
+	max-width: 720px;
+	padding: 0px 20px;
+	margin: auto;
+}
+
+.diff-title {
+	font-size: 30px;
+	font-weight: 400;
+	padding: 30px 0;
+}
+
+.collab {
+	margin: 10px 0;
+}
+
+.company-list {
+	margin: 30px 0;
+	display: flex;
+	gap: 80px;
+	justify-content: center;
+}
+
+.companies i {
+	font-size: 60px;
+}
+
+.clients {
+	font-size: 30px;
+	font-weight: 400;
+	padding-bottom: 30px;
+}
+
+.our-team-title {
+	padding-bottom: 30px;
+}
+
+.our-team {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: 350px 350px;
+	grid-gap: 20px;
+}
+
+.card-link {
+	text-decoration: none;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+.card-link:hover {
+	box-shadow: 0px 0px 10px gray;
+}
+
+.team-card {
+	border-radius: 15px;
+	height: 10rem;
+	width: 350px;
+	background-size: cover;
+	background-blend-mode: screen;
+}
+
+/* .team-card:before {
+	opacity: 0.5;
+	z-index: -1;
+} */
+
+.team-title {
+	padding-top: 110px;
+	padding-right: 20px;
+	text-align: right;
+	color: #000;
+}
+
+.tv {
+	background-image: url("https://lilikoiagency.com/wp-content/uploads/2021/03/Lucas-Swindler-and-Dan-Grieb-editing-footage-at-lilikoi-agency-600x338.jpg");
+}
+
+.web {
+	background-image: linear-gradient(#000, #d1cce5),
+		url("https://lilikoiagency.com/wp-content/uploads/2020/08/web-seo-600x338.jpg");
+}
+
+.pay {
+	background-image: linear-gradient(#000, #d1cce5),
+		url("https://lilikoiagency.com/wp-content/uploads/2020/08/pay_for_performance-600x342.jpg");
+}
+
+.social {
+	background-image: linear-gradient(#000, #d1cce5),
+		url("https://lilikoiagency.com/wp-content/uploads/2020/08/socail-600x338.jpg");
+}
+
+.consult {
+	background-image: linear-gradient(#000, #d1cce5),
+		url("https://lilikoiagency.com/wp-content/uploads/2020/08/operations-consulting-600x338.jpg");
+}
+
+.accounting {
+	background-image: linear-gradient(#000, #d1cce5),
+		url("https://lilikoiagency.com/wp-content/uploads/2020/05/LIK-Promo-Video-May-2020-Screenshots_Nicole-Blue-Container-copy-600x338.jpg");
+}
+
+.data {
+	background-image: linear-gradient(#000, #d1cce5),
+		url("https://lilikoiagency.com/wp-content/uploads/2020/05/LIK-Promo-Video-May-2020-Screenshots_Audrey-w-GFX-copy-600x338.jpg");
+}
+
+.support {
+	background-image: linear-gradient(#000, #d1cce5),
+		url("https://lilikoiagency.com/wp-content/uploads/2020/05/LIK-Promo-Video-May-2020-Screenshots_Boardroom-copy-600x338.jpg");
+}
+
+.admin {
+	background-image: linear-gradient(#000, #d1cce5),
+		url("https://lilikoiagency.com/wp-content/uploads/2020/08/admin-600x320.jpg");
+}
+
+footer {
+	display: grid;
+	justify-content: center;
+	margin-top: 30px;
+	padding: 50px 0;
+	background-color: rgb(29, 29, 29);
+	color: white;
+}
+
+.footer-links {
+	font-size: 23px;
+	display: flex;
+	list-style: none;
+	gap: 60px;
+}
+
+.social-links {
+	display: flex;
+	gap: 80px;
+	justify-content: center;
+	margin: 30px 0;
+}
+.icons {
+	font-size: 40px;
+}
+
+.middle {
+	margin: 0px 60px;
+}
+
+.legal {
+	text-align: center;
+}

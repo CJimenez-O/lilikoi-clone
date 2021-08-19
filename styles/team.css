@@ -1,0 +1,155 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans";
+}
+
+.navBar {
+	padding: 0px 35px;
+}
+.nav-links {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+}
+
+.logo {
+	display: block;
+	height: 60px;
+	cursor: pointer;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.bars {
+	font-size: 25px;
+	cursor: pointer;
+	margin-top: 20px;
+}
+
+/* hero */
+.team-hero {
+	background-blend-mode: screen;
+	background-image: url("https://lilikoiagency.com/wp-content/uploads/2021/03/Lucas-Swindler-and-Dan-Grieb-editing-footage-at-lilikoi-agency.jpg");
+	background-size: cover;
+	height: 70vh;
+}
+
+.hero-container {
+	text-align: right;
+	max-width: 700px;
+	min-width: 300px;
+	margin: auto;
+	padding: 60px 0;
+}
+
+.title {
+	max-width: 400px;
+	min-width: 300px;
+	margin-left: auto;
+	padding-bottom: 20px;
+	border-bottom: 5px solid #9c90c5;
+}
+
+.ohana {
+	max-width: 600px;
+	min-width: 300px;
+	padding: 0 20px;
+	margin: auto;
+}
+
+.welcome {
+	font-size: 23px;
+	padding-bottom: 20px;
+}
+
+.team-members-list {
+	display: flex;
+	gap: 40px;
+	justify-content: center;
+	padding: 20px 0;
+}
+
+.new-member {
+	display: flex;
+	gap: 20px;
+}
+
+.member-photo {
+	border-radius: 20px;
+	height: 80px;
+}
+
+.member-details {
+	font-size: 20px;
+}
+.name {
+	font-weight: 700;
+	margin-top: 20px;
+	margin-bottom: -30px;
+}
+
+/* wave */
+.white-wave {
+	margin-top: -100px;
+	width: 100%;
+}
+
+/* team members section */
+.current-team-members {
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+	margin: 50px 0;
+}
+.flex {
+	display: flex;
+	justify-content: center;
+}
+
+.space {
+	margin-right: 20px;
+	height: 100px;
+}
+
+.quote {
+	max-width: 400px;
+	min-width: 400px;
+	margin-top: 10px;
+	margin-bottom: -20px;
+}
+
+/* footer */
+footer {
+	display: grid;
+	justify-content: center;
+	margin-top: 30px;
+	padding: 50px 0;
+	background-color: rgb(29, 29, 29);
+	color: white;
+}
+
+.footer-links {
+	font-size: 23px;
+	display: flex;
+	list-style: none;
+	gap: 60px;
+}
+
+.social-links {
+	display: flex;
+	gap: 80px;
+	justify-content: center;
+	margin: 30px 0;
+}
+.icons {
+	font-size: 40px;
+}
+
+.middle {
+	margin: 0px 60px;
+}
+
+.legal {
+	text-align: center;
+}
