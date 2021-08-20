@@ -159,21 +159,34 @@ input[type="range"] {
 .element {
 	display: flex;
 	gap: 70px;
-	padding: 5px 10px;
+	padding: 5px 15px;
+	padding-top: 12px;
 	box-shadow: 0px 0px 5px gray;
 	border-radius: 15px;
 	margin: 20px auto;
 	width: 350px;
-	justify-content: center;
+	justify-content: space-between;
 	background-color: #eaeaea;
-	height: 20px;
+	height: 25px;
 	font-weight: 400;
 	font-size: 14px;
+}
+
+.element-name {
+	display: flex;
+	max-width: 150px;
 }
 
 .element-name i {
 	margin-right: 5px;
 }
+
+.element-name p {
+	margin-top: -2px;
+}
+/* .lift {
+	margin-top: -10px !important;
+} */
 
 .element-percent {
 	display: flex;
@@ -208,6 +221,10 @@ input[type="range"] {
 
 	.chart-details {
 		width: unset;
+	}
+
+	input[type="range"] {
+		width: 70px !important;
 	}
 
 	.element {
